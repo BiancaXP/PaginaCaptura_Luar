@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Noto+Color+Emoji&family=REM:wght@100;300;400&family=Roboto+Slab&display=swap');
+
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.conteudo {
+    display: grid;
+	grid-template-columns: 2fr 1fr;
+    grid-template-areas: "left right";
+	grid-gap: 10px;
+    height: 100vh;
+    background-color: #262f45;
+    color: white;
+
+}
+
+.left {
+    grid-area: left;
+}
+
+.left__img-fundo {
+    position: relative;
+    width: 100vh;
+}
+
+.left__conteudo{
+    position: absolute;
+    width: 500px;
+    top: 10%;
+    left: 20%;
+    padding: 3rem;
+}
+
+.left__titulo{
+    font-size: 1.8rem;
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    padding: 2rem 0;
+    line-height: 50px;
+}
+
+.left__texto {
+    font-family: 'REM', sans-serif;
+    font-weight: 100;
+    font-size: 1rem;
+    color: white;
+    padding-bottom: 3rem;
+    font-size: 1.2rem;
+    line-height: 30px;
+}
+
+.left__bold {
+    font-weight: bold;
+}
+
+.left__tipo {
+    padding-bottom: 3rem;
+}
+
+.left__logo-epo {
+    width: 20%;
+}
+
+.right {
+    position: absolute;
+    grid-area: right;
+    width: 400px;
+    top: 20%;
+    margin-left: 10%;
+    border: 1px solid #fff;
+}
+
+.right__titulo {
+    font-family: 'REM', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+ 
+.right__form {
+    padding: 40px;
+    background-color: rgba(38,47,69,0.7);
+}
+
+.label {
+    font-family: 'REM', sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.field {
+    background-color: transparent;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid #b2b2b2;
+    width: 100%;
+    transition-property: border-color;
+    transition-duration: 0.7s;
+    transition-timing-function: cubic-bezier(.5,0,0,1);
+    margin-bottom: 20px;
+}
+
+.form input {
+    outline: 0;
+    overflow: visible;
+}
+&.invalid .field {
+    border-color: red;
+  }
+
+::-webkit-input-placeholder {
+    color: #687289;
+ }
+
+.right__botao {
+    width: 100%;
+    background-color: white;
+    color: #262f45;
+    padding: 30px;
+    font-family: 'REM', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    box-shadow: 10px 10px 5px 10px #262f45;
+    transition: 0.8s;
+
+}
+
+.right__botao:hover {
+    box-shadow: 0 8px 12px 0 rgba(19,27,46,.94);
+    background-color: transparent;
+    color: #fff;
+    border: solid 1px white;
+    
+}
+
+@media (max-width: 600px) {
+
+}
